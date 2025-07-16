@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neela Lohitha Susmitha Reddy | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #1F1D36;
+      --secondary: #3F3351;
+      --accent: #F1C40F;
+      --text-light: #FDFEFE;
+      --text-muted: #BDC3C7;
+      --card-bg: #2E294E;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--primary);
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--accent);
+    }
+
+    header {
+      padding: 2rem 1rem 4rem;
+      background: linear-gradient(to right, #3F3351, #1F1D36);
+      text-align: center;
+      position: relative;
+    }
+
+    nav {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+
+    nav a {
+      margin: 0 0.8rem;
+      color: var(--text-light);
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--text-muted);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-top: 3rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: var(--text-light);
+    }
+
+    .contact-info {
+      margin-top: 1.2rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .contact-info a {
+      font-size: 1rem;
+      color: var(--text-light);
+      transition: color 0.3s;
+    }
+
+    .contact-info a:hover {
+      color: var(--text-muted);
+    }
+
+    section {
+      padding: 3rem 1.5rem;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: var(--accent);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      padding: 2rem;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .summary-content,
+    .education-item {
+      text-align: center;
+      font-size: 1.1rem;
+    }
+
+    .skills-grid,
+    .certifications-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .skill-category ul,
+    .timeline ul {
+      list-style: disc;
+      margin-left: 1.5rem;
+    }
+
+    .timeline-item {
+      margin-bottom: 2rem;
+    }
+
+    .timeline-item h3 {
+      color: var(--text-light);
+      margin: 0.5rem 0;
+    }
+
+    .timeline-item span,
+    .timeline-item p {
+      color: var(--text-muted);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: var(--secondary);
+    }
+
+    .social-links a {
+      margin: 0 1rem;
+      color: var(--text-light);
+      font-size: 1.5rem;
+      transition: opacity 0.3s;
+    }
+
+    .social-links a:hover {
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#summary">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#certifications">Certifications</a>
+    </nav>
+    <h1>UDUMULA NEELA LOHITHA SUSMITHA REDDY</h1>
+    <p>Web Developer | UI/UX Designer | AI Enthusiast</p>
+    <div class="contact-info">
+      <a href="mailto:susmithareddyudumula@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+      <a href="tel:9573589739"><i class="fas fa-phone"></i> Call</a>
+      <a href="https://github.com/Neela8292" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    </div>
+  </header>
+
+  <section id="summary">
+    <div class="container">
+      <h2 class="section-title">Summary</h2>
+      <div class="card summary-content">
+        <p>Quick-learning Computer Science graduate with strong foundations in DSA and OOP. Proficient in full-stack development, collaborative, and driven by innovation and growth mindset.</p>
+      </div>
+
+      <h2 class="section-title" id="skills">Skills</h2>
+      <div class="skills-grid">
+        <div class="card skill-category">
+          <h3>Programming</h3>
+          <ul><li>C</li><li>C++</li><li>Python</li><li>JavaScript</li><li>HTML/CSS</li></ul>
+        </div>
+        <div class="card skill-category">
+          <h3>Databases</h3>
+          <ul><li>SQL Server</li><li>Oracle</li><li>MS Access</li><li>MongoDB</li></ul>
+        </div>
+        <div class="card skill-category">
+          <h3>Tools & Frameworks</h3>
+          <ul><li>React.js</li><li>Node.js</li><li>Figma</li><li>Canva</li></ul>
+        </div>
+      </div>
+
+      <h2 class="section-title" id="experience">Experience</h2>
+      <div class="timeline">
+        <div class="card timeline-item">
+          <span>June 2025 - Present</span>
+          <h3>Purple Technology, Vijayawada</h3>
+          <p>Frontend Intern - Remote</p>
+          <ul>
+            <li>Built scalable UI components for AI Prompt Navigator.</li>
+            <li>Reviewed peer code to ensure best practices and maintainability.</li>
+          </ul>
+        </div>
+
+        <div class="card timeline-item">
+          <span>June 2025 - Present</span>
+          <h3>Edunet Foundation, Bengaluru</h3>
+          <p>AIML Full Stack Intern - Remote</p>
+          <ul>
+            <li>Developed full-stack solutions using React, Node.js, and MongoDB.</li>
+            <li>Integrated ML features for real-time educational tools.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 class="section-title" id="education">Education</h2>
+      <div class="card education-item">
+        <h3>SRM UNIVERSITY AP</h3>
+        <p>Bachelor of Science and Technology (2023–2027)</p>
+        <p>GPA: 8.39 / 10</p>
+        <p>Courses: Database Systems, Computer Science, Web Development</p>
+      </div>
+
+      <h2 class="section-title" id="certifications">Certifications</h2>
+      <div class="certifications-grid">
+        <div class="card">
+          <h3><a href="certificates/urban_vision_hackathon.pdf" target="_blank">Urban Vision Hackathon 2025</a></h3>
+          <p class="certification-issuer">IIT Jammu & Ministry of Education</p>
+          <p class="certification-date">June 2025</p>
+        </div>
+        <div class="card">
+          <h3><a href="certificates/zero_jam.pdf" target="_blank">ZERO JAM</a></h3>
+          <p class="certification-issuer">Microsoft Student Community</p>
+          <p class="certification-date">April 2025</p>
+        </div>
+        <div class="card">
+          <h3><a href="certificates/generative_ai.pdf" target="_blank">Generative AI</a></h3>
+          <p class="certification-issuer">GUVI</p>
+          <p class="certification-date">May 2025</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Neela Lohitha Susmitha Reddy. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/susmitha-reddy-172428291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/Neela8292" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="mailto:susmithareddyudumula@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </footer>
+</body>
+</html>
